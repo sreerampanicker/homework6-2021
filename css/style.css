@@ -1,0 +1,198 @@
+/*Begin your code here*/
+/*Requirement 1*/
+body{
+  font-family:'Raleway', sans-serif;;
+  margin: 0;
+  padding: 0;
+  font-size: 16pt; 
+  background-image: url("../images/concrete_seamless.png")
+}
+
+/*Requirement 2*/
+header{
+  background: #fff;
+  border-bottom: 3px solid #50C7C7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  /*Your  code here again.*/
+
+}
+
+/*Requirement 3*/
+.nav_links{
+  display: flex;
+  flex-direction: column;
+  /*Your code here again.*/
+}
+
+
+/*Requirement 4*/
+.price{
+    min-height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /*Your code here*/
+    /*You must use flex.
+    /*Don't forget to vertically and horizontally 
+    align the element*/
+}
+
+/*Requirement 5*/
+.package {
+  margin: 12px;
+  background: #fff;
+  border-radius: 7px;
+  padding: 0 0 50px 0;
+  flex-basis: 400px;
+  flex-direction: column;
+  /*Your code here.*/
+  /*Take a look at flex-basis*/
+
+}
+
+/*Requirement 6*/
+
+.package > header{ 
+    background: #288080;
+    border: 2px solid #45ADAD;
+    padding: 20px 0;
+    border-radius: 7px 7px 0 0;
+}
+
+
+/*Requirement 7*/
+.gallery{
+  min-height: 600px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: stretch;
+
+  /*Your code here again.*/
+
+}
+
+/*Requirement 8*/
+
+.gallery > img{
+  border: 10px #50C7C7 solid;
+  margin: 10px;
+  width: 300px;
+  
+}
+
+/*Requirement 9*/
+#logo{
+  animation-duration: 15s;
+  animation-iteration-count: 0;
+
+
+   /*Your code here.*/
+ 
+}
+
+/*Keyframes for animation*/
+@-webkit-keyframes logo_grow{
+    0%   {width: 25px; opacity: 0}
+    25%  {width: 125px; opacity: .25}
+    50%  {width: 225px; opacity: .50}
+    75%  {width: 325px; opacity: .75}
+    100% {width: 420px; opacity: 1}
+    
+}
+
+@keyframes logo_grow{
+  0%   {width: 25px; opacity: 0}
+  25%  {width: 125px; opacity: .25}
+  50%  {width: 225px; opacity: .50}
+  75%  {width: 325px; opacity: .75}
+  100% {width: 420px; opacity: 1}
+  /*Your code here.*/
+
+} 
+
+@media screen and (min-width: 850px){
+
+  /*Requirement 10*/
+  header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    /*Your code here again.*/  
+  }
+
+  /*Requirement 10*/
+  .nav_links{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /*Your code here again.*/  
+  }
+
+  /*Requirement 11*/
+  .package {
+    display:flex;
+    flex-direction: column;
+    width:230px;
+    flex: 1;
+    margin-top: auto;;
+    
+
+    /*Your code here again.*/
+  } 
+}
+
+/*Requirement 12*/
+@media (prefers-reduced-motion: reduce) {
+  logo_grow{
+    animation: none;
+    transition: none;
+
+  }
+
+
+
+}
+
+
+
+
+
+
+@media print { 
+  body{
+    background-image:none;
+  }
+  nav{
+    width:100%;
+  }
+  .nav_links{
+    justify-content: space-evenly;
+  }
+  .price{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin-top: auto;;
+
+  }
+  .package{
+    border: 2px #45ADAD;
+    flex-basis:200px;
+  }
+
+  /*Requirement 13*/
+  /*Requirement 14*/
+  /*Requirement 15*/
+  /*Requirement 16*/
+  /*Requirement 17*/
+  /*Requirement 18*/
+ 
+}
+
