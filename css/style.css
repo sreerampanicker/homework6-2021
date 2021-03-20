@@ -36,6 +36,7 @@ header{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    aligh-self: center;
     /*Your code here*/
     /*You must use flex.
     /*Don't forget to vertically and horizontally 
@@ -48,7 +49,9 @@ header{
   background: #fff;
   border-radius: 7px;
   padding: 0 0 50px 0;
+  display: flex;
   flex-basis: 400px;
+  width: 400px;
   flex-direction: column;
   /*Your code here.*/
   /*Take a look at flex-basis*/
@@ -69,9 +72,10 @@ header{
 .gallery{
   min-height: 600px;
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-content: stretch;
+  justify-content: space-evenly;
+  flex-flow: row;
+  align-items: center;
+  align-self: center;
 
   /*Your code here again.*/
 
@@ -89,7 +93,7 @@ header{
 /*Requirement 9*/
 #logo{
   animation-duration: 15s;
-  animation-iteration-count: 0;
+  animation-iteration-count: 1;
 
 
    /*Your code here.*/
@@ -98,23 +102,29 @@ header{
 
 /*Keyframes for animation*/
 @-webkit-keyframes logo_grow{
-    0%   {width: 25px; opacity: 0}
-    25%  {width: 125px; opacity: .25}
-    50%  {width: 225px; opacity: .50}
-    75%  {width: 325px; opacity: .75}
-    100% {width: 420px; opacity: 1}
-    
+
+  0% {
+    width: 25px;
+  }
+  100% {
+    width: 420px;
+  }
+  /*Your code here.*/
+
 }
 
 @keyframes logo_grow{
-  0%   {width: 25px; opacity: 0}
-  25%  {width: 125px; opacity: .25}
-  50%  {width: 225px; opacity: .50}
-  75%  {width: 325px; opacity: .75}
-  100% {width: 420px; opacity: 1}
-  /*Your code here.*/
 
+  0%{
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+  /*Your code here.*/
 } 
+
 
 @media screen and (min-width: 850px){
 
@@ -131,7 +141,8 @@ header{
   .nav_links{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-end;
+    align-items:center;
     /*Your code here again.*/  
   }
 
@@ -140,8 +151,6 @@ header{
     display:flex;
     flex-direction: column;
     width:230px;
-    flex: 1;
-    margin-top: auto;;
     
 
     /*Your code here again.*/
@@ -173,18 +182,20 @@ header{
     width:100%;
   }
   .nav_links{
+    display:flex;
+    flex-direction: row;
     justify-content: space-evenly;
   }
   .price{
-    display: flex;
-    flex-direction: column;
-    flex: 1;
-    margin-top: auto;;
+    vertical-align:bottom;
 
   }
   .package{
-    border: 2px #45ADAD;
+    display: flex;
     flex-basis:200px;
+    border-style:solid;
+    border-color: #45ADAD;
+    border-width: 2px;
   }
 
   /*Requirement 13*/
