@@ -172,20 +172,23 @@ div.package > header{
     justify-content: space-evenly;
   }
   .price{
-    align-items: flex-end;
+    vertical-align:bottom;
 
   }
   .package{
-    display: flex;
+    display:flex;
     flex-basis:200px;
     border-style:solid;
     border-color: #45ADAD;
     border-width: 2px;
   }
-   .gallery, #gallery{
-    display: flex;
+  .gallery{
+    display: none;
   }
 }
+  #gallery{
+    display: none;
+  }
 
   /*Requirement 13*/
   /*Requirement 14*/
