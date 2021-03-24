@@ -32,7 +32,7 @@ header{
 .price{
     min-height: 500px;
     display: flex;
-    flex-wrap: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     /*Your code here*/
